@@ -55,6 +55,43 @@
       /* slight lift */
       box-shadow: 0 4px 12px rgba(51, 168, 142, 0.4);
     }
+
+    /* Marquee text */
+
+    .donate-marquee {
+      color: #33a88e;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      padding: 10px 0;
+      font-weight: 700;
+      position: relative;
+      border-bottom: 2px solid #fff;
+    }
+
+    .donate-marquee p {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 12s linear infinite;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Optional: pause animation on hover */
+    .donate-marquee:hover p {
+      animation-play-state: paused;
+    }
   </style>
 </head>
 
@@ -100,6 +137,11 @@
       </div>
     </div>
   </header>
+  <!-- Moving Text Section -->
+  <div class="donate-marquee">
+    <p>🌟 Join Hands with MPEA – Donate for the Welfare of Society 🌟</p>
+  </div>
+
 
   <main class="main">
 
