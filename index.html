@@ -38,6 +38,26 @@
       position: relative;
       z-index: 1000;
     }
+
+    .donate-btn {
+      padding: 8px 20px;
+      border-radius: 25px;
+      background-color: #33a88e;
+      color: white !important;
+      transition: all 0.3s ease;
+      display: inline-block;
+      font-weight: 500;
+      max-width: 140px;
+    }
+
+    .donate-btn:hover {
+      background-color: #2c907a;
+      /* darker green */
+      color: #fff;
+      transform: translateY(-2px);
+      /* slight lift */
+      box-shadow: 0 4px 12px rgba(51, 168, 142, 0.4);
+    }
   </style>
 
 
@@ -74,6 +94,9 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#donate" class="donate-btn ms-3"
+                style="padding: 8px 20px; border-radius: 25px; background-color: #33a88e; color: white;">Donate Now</a>
+            </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -446,17 +469,17 @@
 
 
     <!-- Testimonials Section -->
-<section id="testimonials" class="testimonials section light-background">
+    <section id="testimonials" class="testimonials section light-background">
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="section-header text-center mb-5">
-      <h2>What Our Members Say</h2>
-      <p>Voices of trust, collaboration, and growth within MPEA</p>
-    </div>
+        <div class="section-header text-center mb-5">
+          <h2>What Our Members Say</h2>
+          <p>Voices of trust, collaboration, and growth within MPEA</p>
+        </div>
 
-    <div class="testimonial-slider swiper init-swiper">
-      <script type="application/json" class="swiper-config">
+        <div class="testimonial-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
         {
           "loop": true,
           "speed": 600,
@@ -480,227 +503,235 @@
         }
       </script>
 
-      <div class="swiper-wrapper">
+          <div class="swiper-wrapper">
 
-        <!-- Testimonial Slide 1 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
-            <div class="testimonial-header">
-              <img src="./assets/img/MPEA-images/00.png" alt="Member" class="img-fluid" loading="lazy">
-              <div class="rating">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+            <!-- Testimonial Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="testimonial-header">
+                  <img src="./assets/img/MPEA-images/00.png" alt="Member" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <p>“MPEA has been instrumental in connecting us with new opportunities in the education and business
+                    sector. The association truly empowers its members.”</p>
+                </div>
+                <div class="testimonial-footer">
+                  <h5>Dr. Anjali Patil</h5>
+                  <span>Member – Education Wing</span>
+                  <div class="quote-icon">
+                    <i class="bi bi-chat-quote-fill"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="testimonial-body">
-              <p>“MPEA has been instrumental in connecting us with new opportunities in the education and business sector. The association truly empowers its members.”</p>
-            </div>
-            <div class="testimonial-footer">
-              <h5>Dr. Anjali Patil</h5>
-              <span>Member – Education Wing</span>
-              <div class="quote-icon">
-                <i class="bi bi-chat-quote-fill"></i>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Testimonial Slide 2 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="300">
-            <div class="testimonial-header">
-              <img src="./assets/img/MPEA-images/00.png" alt="Member" class="img-fluid" loading="lazy">
-              <div class="rating">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+            <!-- Testimonial Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="testimonial-header">
+                  <img src="./assets/img/MPEA-images/00.png" alt="Member" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <p>“Being part of MPEA has given me access to a strong professional network. Their initiatives for
+                    entrepreneurs are remarkable.”</p>
+                </div>
+                <div class="testimonial-footer">
+                  <h5>Rajesh Kumar</h5>
+                  <span>Entrepreneur & MPEA Member</span>
+                  <div class="quote-icon">
+                    <i class="bi bi-chat-quote-fill"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="testimonial-body">
-              <p>“Being part of MPEA has given me access to a strong professional network. Their initiatives for entrepreneurs are remarkable.”</p>
-            </div>
-            <div class="testimonial-footer">
-              <h5>Rajesh Kumar</h5>
-              <span>Entrepreneur & MPEA Member</span>
-              <div class="quote-icon">
-                <i class="bi bi-chat-quote-fill"></i>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Testimonial Slide 3 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="400">
-            <div class="testimonial-header">
-              <img src="./assets/img/MPEA-images/00.png" alt="Member" class="img-fluid" loading="lazy">
-              <div class="rating">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+            <!-- Testimonial Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="testimonial-header">
+                  <img src="./assets/img/MPEA-images/00.png" alt="Member" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <p>“The workshops and events conducted by MPEA have added immense value to our institution. It’s a
+                    platform that truly unites communities.”</p>
+                </div>
+                <div class="testimonial-footer">
+                  <h5>Prof. Neha Deshmukh</h5>
+                  <span>Academician</span>
+                  <div class="quote-icon">
+                    <i class="bi bi-chat-quote-fill"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="testimonial-body">
-              <p>“The workshops and events conducted by MPEA have added immense value to our institution. It’s a platform that truly unites communities.”</p>
-            </div>
-            <div class="testimonial-footer">
-              <h5>Prof. Neha Deshmukh</h5>
-              <span>Academician</span>
-              <div class="quote-icon">
-                <i class="bi bi-chat-quote-fill"></i>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Testimonial Slide 4 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="500">
-            <div class="testimonial-header">
-              <img src="./assets/img/MPEA-images/00.png" alt="Member" class="img-fluid" loading="lazy">
-              <div class="rating">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+            <!-- Testimonial Slide 4 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="500">
+                <div class="testimonial-header">
+                  <img src="./assets/img/MPEA-images/00.png" alt="Member" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <p>“Thanks to MPEA, I’ve collaborated with like-minded professionals and discovered new growth
+                    avenues.”</p>
+                </div>
+                <div class="testimonial-footer">
+                  <h5>Sandeep Joshi</h5>
+                  <span>Industry Partner</span>
+                  <div class="quote-icon">
+                    <i class="bi bi-chat-quote-fill"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="testimonial-body">
-              <p>“Thanks to MPEA, I’ve collaborated with like-minded professionals and discovered new growth avenues.”</p>
-            </div>
-            <div class="testimonial-footer">
-              <h5>Sandeep Joshi</h5>
-              <span>Industry Partner</span>
-              <div class="quote-icon">
-                <i class="bi bi-chat-quote-fill"></i>
-              </div>
-            </div>
+
           </div>
+
+          <div class="swiper-navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
         </div>
 
       </div>
 
-      <div class="swiper-navigation">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- /Testimonials Section -->
+    </section>
+    <!-- /Testimonials Section -->
 
 
 
 
 
     <!-- Team Section -->
-<section id="team" class="team section">
+    <section id="team" class="team section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Our Team</h2>
-    <p>Meet the Leaders of MPEA</p>
-  </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Team</h2>
+        <p>Meet the Leaders of MPEA</p>
+      </div><!-- End Section Title -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="row gy-4">
+        <div class="row gy-4">
 
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="member-card">
-          <div class="member-image-wrapper">
-            <img src="./assets/img/MPEA-images/team-3.jpg" class="img-fluid" alt="Rushikesh Yeduba Hiwale">
-          </div>
-          <div class="member-content">
-            <h4 class="member-name">Mrs. Shevanta Y. Hiwale</h4>
-            <span class="member-role">Chairman</span>
-            <p class="member-bio">Leads MPEA with strategic vision and guidance, fostering social and educational development.</p>
-            <div class="member-socials">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-card">
+              <div class="member-image-wrapper">
+                <img src="./assets/img/MPEA-images/team-3.jpg" class="img-fluid" alt="Rushikesh Yeduba Hiwale">
+              </div>
+              <div class="member-content">
+                <h4 class="member-name">Mrs. Shevanta Y. Hiwale</h4>
+                <span class="member-role">Chairman</span>
+                <p class="member-bio">Leads MPEA with strategic vision and guidance, fostering social and educational
+                  development.</p>
+                <div class="member-socials">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
+          </div><!-- End Team Member -->
 
-      <!-- Team Member 1 -->
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="member-card">
-          <div class="member-image-wrapper">
-            <img src="./assets/img/MPEA-images/founder1.jpeg" class="img-fluid" alt="Rushikesh Yeduba Hiwale">
-          </div>
-          <div class="member-content">
-            <h4 class="member-name">Mr. Rushikesh Y. Hiwale</h4>
-            <span class="member-role">Director</span>
-            <p class="member-bio">Providing strategic leadership and direction to drive MPEA’s mission for social and educational growth.</p>
-            <div class="member-socials">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
+          <!-- Team Member 1 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-card">
+              <div class="member-image-wrapper">
+                <img src="./assets/img/MPEA-images/founder1.jpeg" class="img-fluid" alt="Rushikesh Yeduba Hiwale">
+              </div>
+              <div class="member-content">
+                <h4 class="member-name">Mr. Rushikesh Y. Hiwale</h4>
+                <span class="member-role">Director</span>
+                <p class="member-bio">Providing strategic leadership and direction to drive MPEA’s mission for social
+                  and educational growth.</p>
+                <div class="member-socials">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
+          </div><!-- End Team Member -->
 
-      <!-- Team Member 2 -->
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="member-card">
-          <div class="member-image-wrapper">
-            <img src="./assets/img/MPEA-images/team-1.jpg" class="img-fluid" alt="Bhaskar Yeduba Hiwale">
-          </div>
-          <div class="member-content">
-            <h4 class="member-name">Mr. Bhaskar Y. Hiwale</h4>
-            <span class="member-role">Director</span>
-            <p class="member-bio">Dedicated to fostering community development and supporting MPEA’s vision for sustainable initiatives.</p>
-            <div class="member-socials">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
+          <!-- Team Member 2 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-card">
+              <div class="member-image-wrapper">
+                <img src="./assets/img/MPEA-images/team-1.jpg" class="img-fluid" alt="Bhaskar Yeduba Hiwale">
+              </div>
+              <div class="member-content">
+                <h4 class="member-name">Mr. Bhaskar Y. Hiwale</h4>
+                <span class="member-role">Director</span>
+                <p class="member-bio">Dedicated to fostering community development and supporting MPEA’s vision for
+                  sustainable initiatives.</p>
+                <div class="member-socials">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
+          </div><!-- End Team Member -->
 
-      <!-- Team Member 3 -->
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="member-card">
-          <div class="member-image-wrapper">
-            <img src="./assets/img/MPEA-images/team-2.jpg" class="img-fluid" alt="Team Member">
-          </div>
-          <div class="member-content">
-            <h4 class="member-name">Mrs. Meghana Nikalje</h4>
-            <span class="member-role">Nominee Director</span>
-            <p class="member-bio">Represents and supports MPEA’s interests while ensuring decisions align with the organization’s vision and governance.</p>
-            <div class="member-socials">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
+          <!-- Team Member 3 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-card">
+              <div class="member-image-wrapper">
+                <img src="./assets/img/MPEA-images/team-2.jpg" class="img-fluid" alt="Team Member">
+              </div>
+              <div class="member-content">
+                <h4 class="member-name">Mrs. Meghana Nikalje</h4>
+                <span class="member-role">Nominee Director</span>
+                <p class="member-bio">Represents and supports MPEA’s interests while ensuring decisions align with the
+                  organization’s vision and governance.</p>
+                <div class="member-socials">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+              </div>
             </div>
-          </div>
+          </div><!-- End Team Member -->
         </div>
-      </div><!-- End Team Member -->
-    </div>
 
-  </div>
+      </div>
 
-</section>
-<!-- /Team Section -->
+    </section>
+    <!-- /Team Section -->
 
 
     <!-- Faq Section -->
@@ -1043,10 +1074,10 @@
 
   </footer>
 
-      <!-- Watsapp Float Icon -->
-    <a href="https://api.whatsapp.com/send?phone=919096883042" class="whatsapp_float" target="_blank">
+  <!-- Watsapp Float Icon -->
+  <a href="https://api.whatsapp.com/send?phone=919096883042" class="whatsapp_float" target="_blank">
     <i class="bi bi-whatsapp whatsapp-icon"></i>
-    </a>
+  </a>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
